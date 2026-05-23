@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 3 — Training Schedule</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0a0a0f; --surface: #13131a;
+      --accent: #43e97b; --text: #f0f0f8; --muted: #7a7a9a;
+      --border: rgba(67,233,123,0.18);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 32px; }
+
+    .orb { position: fixed; border-radius: 50%; filter: blur(90px); pointer-events: none; }
+    .orb-1 { width: 400px; height: 400px; background: rgba(67,233,123,0.08); bottom: -100px; right: 0; }
+
+    .card {
+      position: relative; z-index: 1;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 28px; padding: 56px 48px; max-width: 560px; width: 100%;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block; padding: 6px 18px; border-radius: 20px;
+      background: rgba(67,233,123,0.12); color: var(--accent);
+      font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+      font-weight: 600; margin-bottom: 28px;
+    }
+    .icon { font-size: 3.5rem; margin-bottom: 24px; display: block; }
+    h1 { font-family: 'Syne', sans-serif; font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 16px; }
+    p { font-size: 1rem; color: var(--muted); line-height: 1.8; margin-bottom: 40px; }
+    .back-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 28px; border-radius: 12px;
+      background: var(--accent); border: none; color: #0a0a0f;
+      font-family: 'Syne', sans-serif; font-weight: 700;
+      font-size: 0.9rem; letter-spacing: 0.05em;
+      cursor: pointer; text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .back-btn:hover { opacity: 0.85; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="card">
+    <span class="badge">Project 03</span>
+    <span class="icon">✅</span>
+    <h1>Training Schedule</h1>
+    <p>Aplikasi jadwal latihan mingguan berbasis To-Do List. Pengguna bisa menambahkan, menandai selesai, dan menghapus jadwal latihan olahraga setiap harinya, cocok untuk menjaga konsistensi rutinitas.</p>
+    <a href="index.html" class="back-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Kembali ke Halaman Utama
+    </a>
+  </div>
+  <script>
+    console.log("Project 3: Training Schedule");
+  </script>
+</body>
+</html>
